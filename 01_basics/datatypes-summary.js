@@ -44,4 +44,37 @@ console.log(typeof anotherId); //symbol
 
 
 
-// https://262.ecma-international.org/5.1/#sec-11.4.3
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive)  used for primitive datatypes
+//let a = 10;
+//let b = a;  Copy of the value (not reference)
+
+
+let myyoutubename = "divyabharat@gmail.com"
+
+let anothername = myyoutubename
+anothername = "chaiaurcode"
+
+console.log(myyoutubename)
+console.log(anothername)
+
+
+//Heap (Non-Primitive) Used for non-primitive values
+//slower than heap
+
+//let obj1 = { name: "Alice" };
+//let obj2 = obj1;  Both point to the same object in the heap
+
+
+let userone = {
+    email : "usergoogle.com",
+    upi : "user@bly"
+}
+
+let usertwo = userone
+
+usertwo.email = "divyabharat@gmail.com"
+
+console.log(userone.email)
+console.log(usertwo.email)
