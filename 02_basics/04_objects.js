@@ -59,3 +59,29 @@ users[1].email
 // console.log(Object.entries(tinderUser)); // returns an array of key-values subarrays ([ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ])
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+const course = {
+coursename : "js in hindi",
+price : 999 , 
+courseInstructor : "Divya"
+}
+
+console.log(course.courseInstructor)
+
+const {courseInstructor : Instructor} = course
+
+console.log(Instructor)
+
+
+//Json Format
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
